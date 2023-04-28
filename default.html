@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Uchefuna Ezike">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/modal-styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/media.css">
+    <!--  DOM Functionality-->
+    <script src="srcipts/scripts.js" defer></script>
+  </head>
+
+  <body>
+
+    <header></header>
+
+    <main>
+      <div class="maincontainer">
+        <div class="container-wrapper">
+          <div class="body-text">
+            <div style="align-self: flex-start">
+              <h1>COMPLEX CALCULATORS</h1>
+              <h2>Use the menu bar to the right to select calculators</h2>
+            </div>
+
+            <div class="text-screen">
+              <h4>HTML Display Console</h4>
+              <div id="displayscreen1">
+                <!-- <p> > <span class="displ1"></span> </p>
+                <p> > <span class="displ1"></span> </p>
+                <p> > <span class="displ1"></span> </p>
+                <p> > <span class="displ1"></span> </p>
+                <p> > <span class="displ1"></span> </p>
+                <p> > <span class="displ1"></span> </p>
+                <p> > <span class="displ1"></span> </p>
+                <p> > <span class="displ1"></span> </p>
+                <p> > <span class="displ1"></span> </p>
+                <p> > <span class="displ1"></span> </p>
+                <p> > <span class="displ1"></span> </p>
+                <p> > <span class="displ1"></span> </p>
+                <p> > <span class="displ1"></span> </p>
+                <p> > <span class="displ1"></span> </p>
+                <p> > <span class="displ1"></span> </p> -->
+              </div>
+            </div>
+
+            <div style="align-self: flex-end">
+              <button><strong>Remove calculator</strong></button>
+              <button><strong>Remove textboard</strong></button>
+            </div>
+          </div>
+          <div class="calculator-container standard">
+            <div class="calculator-display">
+              <p>1000</p>
+            </div>
+            <div class="calculator-body">
+              <div>
+                <input type="button" value="on" />
+                <input type="button" value="A" />
+                <input type="button" value="B" />
+                <input type="button" value="C" />
+                <input type="button" value="off" />
+              </div>
+              <div>
+                <input type="button" value="MR" />
+                <input type="button" value="AC" />
+                <input type="button" value="DC" />
+                <input type="button" value="%" />
+                <input type="button" value="/" />
+              </div>
+              <div>
+                <input type="button" value="M+" />
+                <input type="button" value="1" class="basic-digit" />
+                <input type="button" value="2" class="basic-digit" />
+                <input type="button" value="3" class="basic-digit" />
+                <input type="button" value="*" />
+              </div>
+              <div>
+                <input type="button" value="M-" />
+                <input type="button" value="4" class="basic-digit" />
+                <input type="button" value="5" class="basic-digit" />
+                <input type="button" value="6" class="basic-digit" />
+                <input type="button" value="-" />
+              </div>
+              <div>
+                <input type="button" value="MS" />
+                <input type="button" value="7" class="basic-digit" />
+                <input type="button" value="8" class="basic-digit" />
+                <input type="button" value="9" class="basic-digit" />
+                <input type="button" value="+" />
+              </div>
+              <div>
+                <input type="button" value="MC" />
+                <input type="button" value="." class="basic-digit" />
+                <input type="button" value="0" class="basic-digit" />
+                <input type="button" value="00" class="basic-digit" />
+                <input type="button" value="*2" />
+              </div>
+              <div>
+                <input type="button" value="MU" />
+                <input type="button" value="-" />
+                <input type="button" value="(" />
+                <input type="button" value=")" />
+                <input type="button" value="=" class="equalsign" />
+              </div>
+            </div>
+            <div class="calculator-footer">
+              <p class="footer-p1"> > <span class="footer-disp"></span></p>
+              <p class="footer-text">Standard Calculator</p>
+            </div>
+          </div>
+
+          <div class="calculator-container developer">
+            <div class="calculator-display">
+              <p></p>
+            </div>
+            <div class="calculator-body">
+              <div>
+                <input type="button" value="on" />
+                <input type="button" value="nan" />
+                <input type="button" value="nor" />
+                <input type="button" value="xor" />
+                <input type="button" value="off" />
+              </div>
+              <div>
+                <input type="button" value="and" />
+                <input type="button" value="or" />
+                <input type="button" value="not" />
+                <input type="button" value="ls" />
+                <input type="button" value="rs" />
+              </div>
+              <div>
+                <input type="button" value="A" />
+                <input type="button" value="AC" />
+                <input type="button" value="DC" />
+                <input type="button" value="b12" />
+                <input type="button" value="/" />
+              </div>
+              <div>
+                <input type="button" value="B" />
+                <input type="button" value="1" class="basic-digit" />
+                <input type="button" value="2" class="basic-digit" />
+                <input type="button" value="3" class="basic-digit" />
+                <input type="button" value="*" />
+              </div>
+              <div>
+                <input type="button" value="C" />
+                <input type="button" value="4" class="basic-digit" />
+                <input type="button" value="5" class="basic-digit" />
+                <input type="button" value="6" class="basic-digit" />
+                <input type="button" value="-" />
+              </div>
+              <div>
+                <input type="button" value="D" />
+                <input type="button" value="7" class="basic-digit" />
+                <input type="button" value="8" class="basic-digit" />
+                <input type="button" value="9" class="basic-digit" />
+                <input type="button" value="+" />
+              </div>
+              <div>
+                <input type="button" value="E" />
+                <input type="button" value="." class="basic-digit" />
+                <input type="button" value="0" class="basic-digit" />
+                <input type="button" value="00" class="basic-digit" />
+                <input type="button" value="dec" />
+              </div>
+              <div>
+                <input type="button" value="F" />
+                <input type="button" value="hex" />
+                <input type="button" value="oct" />
+                <input type="button" value="bin" />
+                <input type="button" value="=" class="equalsign" />
+              </div>
+            </div>
+            <div class="calculator-footer">
+              <p class="footer-p1"> > <span class="footer-disp"></span></p>
+              <p class="footer-text">Developer Calculator</p>
+            </div>
+          </div>
+
+          <div class="calculator-container scientific">
+            <div class="calculator-display">
+              <p></p>
+            </div>
+            <div class="calculator-body">
+              <div>
+                <input type="button" value="on" />
+                <input type="button" value="A" />
+                <input type="button" value="B" />
+                <input type="button" value="C" />
+                <input type="button" value="off" />
+              </div>
+              <div>
+                <input type="button" value="log" />
+                <input type="button" value="AC" />
+                <input type="button" value="DC" />
+                <input type="button" value="%" />
+                <input type="button" value="/" />
+              </div>
+              <div>
+                <input type="button" value="Pi" />
+                <input type="button" value="1" class="basic-digit" />
+                <input type="button" value="2" class="basic-digit" />
+                <input type="button" value="3" class="basic-digit" />
+                <input type="button" value="*" />
+              </div>
+              <div>
+                <input type="button" value="ln2" />
+                <input type="button" value="4" class="basic-digit" />
+                <input type="button" value="5" class="basic-digit" />
+                <input type="button" value="6" class="basic-digit" />
+                <input type="button" value="-" />
+              </div>
+              <div>
+                <input type="button" value="**" />
+                <input type="button" value="7" class="basic-digit" />
+                <input type="button" value="8" class="basic-digit" />
+                <input type="button" value="9" class="basic-digit" />
+                <input type="button" value="+" />
+              </div>
+              <div>
+                <input type="button" value="sqr" />
+                <input type="button" value="." class="basic-digit" />
+                <input type="button" value="0" class="basic-digit" />
+                <input type="button" value="00" class="basic-digit" />
+                <input type="button" value="x/y" />
+              </div>
+              <div>
+                <input type="button" value="mod" />
+                <input type="button" value="--" />
+                <input type="button" value="sin" />
+                <input type="button" value="cos" />
+                <input type="button" value="tan" />
+              </div>
+              <div>
+                <input type="button" value="|x|" />
+                <input type="button" value="exp" />
+                <input type="button" value="1/x" />
+                <input type="button" value="x2" />
+                <input type="button" value="=" class="equalsign" />
+              </div>
+            </div>
+            <div class="calculator-footer">
+              <p class="footer-p1"> > <span class="footer-disp"></span></p>
+              <p class="footer-text">Scientific Calculator</p>
+            </div>
+          </div>
+
+          <div class="calculator-container converter">
+            <div class="calculator-display">
+              <p></p>
+              <select class="selector1"name="converter">
+                <option value="">Select</option>
+                <option class="options" value="millimetres">Millimetres</option>
+                <option class="options" value="centimetres">Centimetres</option>
+                <option class="options" value="metres">Metres</option>
+                <option value="kilometres">Kilometres</option>
+                <option value="inches">Inches</option>
+                <option value="feet">Feet</option>
+                <option value="yards">Yards</option>
+                <option value="miles">Miles</option>
+              </select>
+            </div>
+            <div class="calculator-display">
+              <p></p>
+              <select class="selector2"name="converter">
+                <option value="">Select</option>
+                <option value="millimetres">Millimetres</option>
+                <option value="centimetres">Centimetres</option>
+                <option value="metres">Metres</option>
+                <option value="kilometres">Kilometres</option>
+                <option value="inches">Inches</option>
+                <option value="feet">Feet</option>
+                <option value="yards">Yards</option>
+                <option value="miles">Miles</option>
+              </select>
+            </div>
+            <div class="calculator-body">
+              <div>
+                <input type="button" value="on" />
+                <input type="button" value="-" />
+                <input type="button" value="(" />
+                <input type="button" value=")" />
+                <input type="button" value="off" />
+              </div>
+              <div>
+                <input type="button" value="MR" />
+                <input type="button" value="AC" />
+                <input type="button" value="DC" />
+                <input type="button" value="%" />
+                <input type="button" value="/" />
+              </div>
+              <div>
+                <input type="button" value="M+" />
+                <input type="button" value="1" class="basic-digit" />
+                <input type="button" value="2" class="basic-digit" />
+                <input type="button" value="3" class="basic-digit" />
+                <input type="button" value="*" />
+              </div>
+              <div>
+                <input type="button" value="M-" />
+                <input type="button" value="4" class="basic-digit" />
+                <input type="button" value="5" class="basic-digit" />
+                <input type="button" value="6" class="basic-digit" />
+                <input type="button" value="-" />
+              </div>
+              <div>
+                <input type="button" value="MC" />
+                <input type="button" value="7" class="basic-digit" />
+                <input type="button" value="8" class="basic-digit" />
+                <input type="button" value="9" class="basic-digit" />
+                <input type="button" value="+" />
+              </div>
+              <div>
+                <input type="button" value="*2" />
+                <input type="button" value="." class="basic-digit" />
+                <input type="button" value="0" class="basic-digit" />
+                <input type="button" value="00" class="basic-digit" />
+                <input type="button" value="=" class="equalsign" />
+              </div>
+            </div>
+            <div class="calculator-footer">
+              <p class="footer-p1"> > <span class="footer-disp"></span></p>
+              <p class="footer-text">Converter Calculator</p>
+            </div>
+          </div>
+
+          <div class="calculator-container time">
+            <div class="calculator-display">
+              <p></p>
+              <select class="selector3"name="time">
+                <option value="">Select</option>
+                <option value="millisecond">Millisecond</option>
+                <option value="second">Second</option>
+                <option value="minute">Minute</option>
+                <option value="hour">Hour</option>
+                <option value="weekday">weekday</option>
+                <option value="day">Day</option>
+                <option value="month">Month</option>
+                <option value="year">Year</option>
+              </select>
+            </div>
+            <div class="calculator-display">
+              <p></p>
+              <select class="selector4"name="time">
+                <option value="">Select</option>
+                <option value="millisecond">Millisecond</option>
+                <option value="second">Second</option>
+                <option value="minute">Minute</option>
+                <option value="hour">Hour</option>
+                <option value="weekday">weekday</option>
+                <option value="day">Day</option>
+                <option value="month">Month</option>
+                <option value="year">Year</option>
+              </select>
+            </div>
+            <div class="calculator-body">
+              <div>
+                <input type="button" value="on" />
+                <input type="button" value="-" />
+                <input type="button" value="(" />
+                <input type="button" value=")" />
+                <input type="button" value="off" />
+              </div>
+              <div>
+                <input type="button" value="MR" />
+                <input type="button" value="AC" />
+                <input type="button" value="DC" />
+                <input type="button" value="%" />
+                <input type="button" value="/" />
+              </div>
+              <div>
+                <input type="button" value="M+" />
+                <input type="button" value="1" class="basic-digit" />
+                <input type="button" value="2" class="basic-digit" />
+                <input type="button" value="3" class="basic-digit" />
+                <input type="button" value="*" />
+              </div>
+              <div>
+                <input type="button" value="M-" />
+                <input type="button" value="4" class="basic-digit" />
+                <input type="button" value="5" class="basic-digit" />
+                <input type="button" value="6" class="basic-digit" />
+                <input type="button" value="-" />
+              </div>
+              <div>
+                <input type="button" value="MC" />
+                <input type="button" value="7" class="basic-digit" />
+                <input type="button" value="8" class="basic-digit" />
+                <input type="button" value="9" class="basic-digit" />
+                <input type="button" value="+" />
+              </div>
+              <div>
+                <input type="button" value="*2" />
+                <input type="button" value="." class="basic-digit" />
+                <input type="button" value="0" class="basic-digit" />
+                <input type="button" value="00" class="basic-digit" />
+                <input type="button" value="=" class="equalsign" />
+              </div>
+            </div>
+            <div class="calculator-footer">
+              <p class="footer-p1"> > <span class="footer-disp"></span></p>
+              <p class="footer-text">Time/Date Calculator</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidenav">
+          <a class="closebtn">&times;</a>
+          <a>Standard Calculator</a>
+          <a>Developer Calculator</a>
+          <a>Scientific Calculator</a>
+          <a>Converter Calculator</a>
+          <a>Time/Date Calculator</a>
+        </div>
+
+        <span class="open-sidemenu"></span>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <div class="modalbox modalcontainer">
+      <div id="modalcontent">
+
+        <div class="modal-header">
+          <h2>Uche Modal Box</h2>
+        </div>
+
+        <div class="modalbox modalbody">
+          <div><span class="modalbox"></span></div>
+          <input type="text" class="modalbox" autocomplete="off"><br>
+        </div>
+
+        <div class="modalfooter">
+          <button class="modalbox">CHANGE</button>
+          <button class="modalbox">SEND</button>
+          <button class="modalbox">CANCEL</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>
